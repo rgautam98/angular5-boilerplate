@@ -1,0 +1,7 @@
+- To create a new component, run:
+      - ng generate component <component name> # Long hand notation
+      - ng g c <component name> # Short hand notation
+
+- To create a new service. run:
+      - ng generate service <service name>
+      - ng g s <service name>
