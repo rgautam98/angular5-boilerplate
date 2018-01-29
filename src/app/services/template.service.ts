@@ -6,7 +6,7 @@ export class TemplateService {
   constructor() { }
 
   test(){
-      console.log("You are in the test service");
+      console.log("You are in the test service in the template services.");
   }
 
 }

@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 
+// Importing services
+import { TemplateService } from "../../services/template.service";
+
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
@@ -9,12 +12,17 @@ import { Router } from '@angular/router';
 })
 export class TestComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private router: Router) {
+  constructor(private route: ActivatedRoute, private router: Router, private testService: TemplateService) {
       console.log("the test component is loaded.")
   }
 
   ngOnInit() {
       console.log("The test component is live");
+  }
+
+  callTemplateService(){
+     console.log("Calling the template service");
+     this.testService.test();
   }
 
 }
