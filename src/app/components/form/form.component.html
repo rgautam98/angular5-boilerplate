@@ -1,0 +1,31 @@
+<h1> Testing user input </h1>
+<div id="testingIP">
+    <input [(ngModel)]="testVar" #ctrl="ngModel" placeholder="Enter your input" /> <!-- Straight forward model decleration -->
+    <br />
+    <br />
+    <p> The user has entered:   {{testVar}} </p>
+    <!-- This is 2 way data binding -->
+</div>
+
+<hr />
+
+<h1> Forms in Angular </h1>
+<div id="formTesting">
+
+  <form (ngSubmit)="formSubmitted()">
+      <input [(ngModel)]="formModel.email" name="email" placeholder="email?" />
+      <input [(ngModel)]="formModel.password" name="password" placeholder="password?" type="password" />
+      <button> Submit </button>
+  </form>
+</div>
+
+<br /><br />
+<h1> Looping example </h1>
+<!-- This is a small looping example -->
+
+<div *ngIf="loopData">
+    <div *ngFor="let element of loopData">
+        {{ element }}
+      <br />
+    </div>
+</div>
