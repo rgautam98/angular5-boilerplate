@@ -15,12 +15,14 @@ import { TemplateService } from './services/template.service';
 import { HttpService } from './services/http.service';
 import { FormComponent } from './components/form/form.component';
 import { HttpComponent } from './components/http/http.component';
+import { RoutingComponent } from './components/routing/routing.component';
 
 const appRoutes: Routes = [
   { path: 'test', component: TestComponent },
   { path: 'home', component: HomeComponent },
   { path: 'form', component: FormComponent },
   { path: 'http', component: HttpComponent },
+  { path: 'route', component: RoutingComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
@@ -32,6 +34,7 @@ const appRoutes: Routes = [
     PagenotfoundComponent,
     FormComponent,
     HttpComponent,
+    RoutingComponent,
   ],
   imports: [
     BrowserModule,
