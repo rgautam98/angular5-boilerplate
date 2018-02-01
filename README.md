@@ -1,6 +1,10 @@
-# AngularBoilerplate
+# Angular 5 Boilerplate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
+This is my custom boilerplate with drop in functions for HTTP requests, Form management, and other basic angular stuff.  I created this for an easy kickstart for new projects as I dont have to rewrite certain services again.  
+
+As of now, this is only integrated with HTTP requests, and basic angular routines. I will keep adding more over time.  
+
+If it helps you, feel free to use it. If you want to contribute, feel free to make a pull request.  
 
 ## Development server
 
