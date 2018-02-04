@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
+  testVar;
   formModel = {
-      email: "",
-      password: ""
+      email: '',
+      password: ''
   }
 
   loopData = [
@@ -21,11 +22,11 @@ export class FormComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-      console.log("Running the form component");
+      console.log('Running the form component');
   }
 
   formSubmitted(){
-    console.log("The form has been submitted");
+    console.log('The form has been submitted');
     console.log(this.formModel);
   }
 
