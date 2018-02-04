@@ -18,6 +18,7 @@ import { HttpComponent } from './components/http/http.component';
 import { RoutingComponent } from './components/routing/routing.component';
 
 const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'test', component: TestComponent },
   { path: 'home', component: HomeComponent },
   { path: 'form', component: FormComponent },
