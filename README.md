@@ -6,6 +6,12 @@ As of now, this is only integrated with HTTP requests, and basic angular routine
 
 If it helps you, feel free to use it. If you want to contribute, feel free to make a pull request.  
 
+## ToDo   
+  
+- [ ] Guards
+- [ ] Piples
+- [ ] Classes  
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
