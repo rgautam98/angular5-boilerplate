@@ -3,19 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+// Services
+import { TemplateService } from './services/template.service';
+import { HttpService } from './services/http.service';
 
 // Components
 import { AppComponent } from './app.component';
 import { TestComponent } from './components/test/test.component';
 import { HomeComponent } from './components/home/home.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
-import { HttpClientModule } from '@angular/common/http';
-// Services
-import { TemplateService } from './services/template.service';
-import { HttpService } from './services/http.service';
 import { FormComponent } from './components/form/form.component';
 import { HttpComponent } from './components/http/http.component';
 import { RoutingComponent } from './components/routing/routing.component';
+import { TableComponent } from './components/table/table.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
   { path: 'form', component: FormComponent },
   { path: 'http', component: HttpComponent },
   { path: 'route', component: RoutingComponent },
-  { path: '**', component: PagenotfoundComponent }
+  { path: 'table', component: TableComponent },
+  { path: '**', component: PagenotfoundComponent },
 ];
 
 @NgModule({
@@ -36,6 +39,7 @@ const appRoutes: Routes = [
     FormComponent,
     HttpComponent,
     RoutingComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,

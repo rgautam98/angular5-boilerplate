@@ -30,5 +30,15 @@ export class HttpService {
     .toPromise();
   }
 
+  getTableData(): any {
+    // Setting Headers
+
+    // const headers = { foo: 'bar' };
+
+    return this.http.get('http://localhost:4192/api/v1/subjects', {
+    }).toPromise();
+  }
+
+
 
 }
