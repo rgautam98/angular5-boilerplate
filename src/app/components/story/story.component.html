@@ -1,0 +1,18 @@
+<h1> Welcome to the {{title}} </h1>
+
+<h1> Images </h1>
+
+
+<div>
+  
+  <p> No lazy loader</p>
+
+  <div *ngIf="showLow">
+    <img *ngFor="let image of lowImages" src="{{image}}" >
+  </div>
+
+  <div [hidden]="showLow">
+    <img *ngFor="let image of highImages" src="{{image}}" (load)="imagesLoaded()">
+  </div>
+
+</div>

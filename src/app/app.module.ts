@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LazyLoadImagesModule } from 'ngx-lazy-load-images';
 
 // Services
 import { TemplateService } from './services/template.service';
@@ -18,6 +19,7 @@ import { FormComponent } from './components/form/form.component';
 import { HttpComponent } from './components/http/http.component';
 import { RoutingComponent } from './components/routing/routing.component';
 import { TableComponent } from './components/table/table.component';
+import { StoryComponent } from './components/story/story.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,6 +29,7 @@ const appRoutes: Routes = [
   { path: 'http', component: HttpComponent },
   { path: 'route', component: RoutingComponent },
   { path: 'table', component: TableComponent },
+  { path: 'story/:title', component: StoryComponent },
   { path: '**', component: PagenotfoundComponent },
 ];
 
@@ -40,12 +43,14 @@ const appRoutes: Routes = [
     HttpComponent,
     RoutingComponent,
     TableComponent,
+    StoryComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    LazyLoadImagesModule
   ],
   providers: [
     // All your services come here.
